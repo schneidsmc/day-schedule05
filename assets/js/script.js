@@ -50,7 +50,11 @@ updateCurrent(); //re-run function
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
+  $('.saveBtn').on('click', function () {
+    console.log(this)
+    
 
+  })
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
