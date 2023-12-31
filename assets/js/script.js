@@ -4,7 +4,6 @@ $(document).ready(function () {
   
   var nowTime = dayjs().format ('MMMM-DD-YYYY, hh:mm a');
   $("#currentDay").text(nowTime);
-  
 
   function updateCurrent() {
     var nowTime = dayjs().hour();
@@ -39,20 +38,16 @@ $(document).ready(function () {
       localStorage.setItem(time, text);
 
       if(text || time !== 'null') {
-        $('#logStored').addClass("logStored").text('Task Stored!').fadeIn();
+        $('#logStored').addClass("logStored").text('Task Stored!');
         setTimeout(function () {
 
           location.reload();
         }, 1000);
       
     }
-
-
     console.log(time, text);
 
-    })
-  
-    
+    }) 
     
 }
 

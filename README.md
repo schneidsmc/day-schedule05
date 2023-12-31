@@ -27,4 +27,21 @@ As a result, the day scheduler will have the following attributes:
 
 - Page responds to the current time by turning different text boxed gray/red/green respectively. 
 
-- 
+- Tasks saved to localStorage when the save button is clicked. If the page is refreshed, the localStorage displays the tasks in the corresponding hour. I added a button to clear all tasks from the text boxes as well as the localStorage. 
+
+- A text box displays saying "Task Stored!" when the save button is pressed. This text only displays for a couple seconds and then refreshes the page and disappears.
+
+## Installation
+
+- Clone this repository
+* $ git clone git@github.com:schneidsmc/day-schedule05.git
+
+## Usage
+
+-Deployed URL
+
+* https://schneidsmc.github.io/day-schedule05/
+
+## Author
+
+* [schneidsmc](https://github.com/schneidsmc)
