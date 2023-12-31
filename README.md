@@ -17,7 +17,7 @@ As a result, the day scheduler will have the following attributes:
 
 ## HTML
 
-- The HTML given showed thre time blocks for past, present and future. The HTML was edited to remove the past/present/future classes and to show time blocks for 7am to 6pm. 
+- The HTML given showed thre time blocks for past, present and future. The HTML was edited to remove the past/present/future classes and to show time blocks for 9am to 5pm. 
 
 ## Javascript
 
