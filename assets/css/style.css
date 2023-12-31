@@ -20,7 +20,11 @@ textarea {
   border-radius: 15px;
 }
 
-
+.logStored{
+  align-items: center;
+  font-weight: 300;
+  font-size: 25px;
+}
 
 
 .row {
