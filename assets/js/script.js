@@ -1,10 +1,11 @@
 var clearBtn = document.querySelector(".clearBtn")
 
+// This function runs as soon as the page is loaded.
 $(document).ready(function () {
   
   var nowTime = dayjs().format ('MMMM-DD-YYYY, hh:mm a');
   $("#currentDay").text(nowTime);
-
+// This function designates the date and time at the top of the page. It also used to update the class applied to each time block according to the time. Past/Present/Future.
   function updateCurrent() {
     var nowTime = dayjs().hour();
 
@@ -28,7 +29,7 @@ $(document).ready(function () {
             $(this).addClass("future");
         }
     })
-    
+    // This function saves the task to local storage.
     $('.saveBtn').on('click', function () {
 
       var text = $(this).siblings(".description").val();
@@ -51,6 +52,7 @@ $(document).ready(function () {
     
 }
 
+// These make sure to display the task associated with the specific hour it is saved from. 
 $("#hour9 .description").val(localStorage.getItem("hour9"));
 $("#hour10 .description").val(localStorage.getItem("hour10"));
 $("#hour11 .description").val(localStorage.getItem("hour11"));
@@ -64,6 +66,7 @@ $("#hour17 .description").val(localStorage.getItem("hour17"));
 
 updateCurrent(); //re-run function
 
+// This button clears all the tasks.
 clearBtn.addEventListener('click', function clearLocalStorage() {
   localStorage.clear();
   clearList()

@@ -31,6 +31,16 @@ As a result, the day scheduler will have the following attributes:
 
 - A text box displays saying "Task Stored!" when the save button is pressed. This text only displays for a couple seconds and then refreshes the page and disappears.
 
+## Screenshots
+
+- This first screen shot is empty but shows the active time and color changing blocks according to the time.
+
+<img src="./assets/images/empty-screenshot.png" alt="WF for dashboard" width="300" height="auto">
+
+- This screenshot shows stored tasks. If the page is refreshed the tasks will stay within the timeslot until the clear button is hit or the tasks are manually removed.
+
+<img src="./assets/images/saved-tasks.png" alt="WF for dashboard" width="300" height="auto">
+
 ## Installation
 
 - Clone this repository
